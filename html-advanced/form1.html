@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <title>The form</title>
+        <meta charset="UTF-8">     
+    </head>
+    <body>
+       <h1>The form</h1>
+        <form action="http://httpbin.org/get" method="get">
+            <fieldset>
+               <legend>Personal data</legend>
+                <label for="surname"> Surname</label> <input type="text" name="surname" id="surname" autofocus>
+                <br> <br> 
+                <label for="first_name"> First name</label> <input type="text" name="first_name" id="first_name">
+                <br> <br> 
+                <label for="middle_name">Middle name</label> <input type="text" name="middle_name" id="middle_name">
+                <br> <br>
+                <label >You are</label> 
+                       <input type="radio" name="sex" value="male" id="male" checked> <label for="male">Male</label>  
+                        <input type="radio" name="sex" id="female" value="female"> <label for="female">Female</label>
+                <br> <br>
+                <label for="age">Age</label> <input type ="number" min="18" max="101" id="age">
+                <br> <br>
+                <label for="residence">Country of Residence</label> <input list="countries" id="residence">
+                <datalist id="countries">
+                    <option value="Russia">
+                    <option value="China">    
+                    <option value="USA">
+                </datalist>
+                <br> <br>
+                <label>City</label> 
+                <input type="checkbox" name="city" id="ryazan"> <label for="ryazan"> Ryazan</label>
+                <input type="checkbox" name="city" id="moscow"> <label for="moscow"> Moscow</label>
+                <br> <br>
+                <label for="photo">Photography</label> <input type="file" id="photo"> <hr>
+                <label for="title">Title</label> <select size=8 name="titles[]" id="title" multiple>
+                    <optgroup label="Technologies">
+                    <option>Web master</option>
+                    <option>Database Administrator</option>
+                    <option>Computer-aided design</option>            
+                    </optgroup>
+                    <optgroup label="Finance">
+                       <option>Economic Planning</option>
+                       <option>Management accounting</option>
+                       <option>Budgeting and planning</option>     
+                    </optgroup>
+                </select>
+                <br> <br>
+                <label for="salary">Salary</label> <input type="range" id="salary">
+                <br> <br>
+                <textarea name="about yourself" rows="5" cols="30">Tell about yourself... </textarea>               
+            </fieldset>
+            <fieldset>
+               <legend>Contact information</legend>
+                <label for="site">Site</label> <input type="url" id="site">
+               <br> <br>
+                <label for="email">Email</label> <input type="email" id="email">
+               <br> <br>
+                <label for="phone">Phone</label> <input type="text" id="phone">                
+            </fieldset>
+            <br> <br>
+            <label for="password">Password</label> <input type="password" id="password" required>
+            <br> <br> <hr>
+            <button type="submit">Отправить</button>
+            <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Отправитьpost</button>
+            <button type="reset">Сбросить</button>
+        </form>
+    </body>
+    
+</html>
