@@ -1,0 +1,42 @@
+body {
+    background: url(http://media.gettyimages.com/photos/haifoss-waterfall-iceland-picture-id660254169);
+    background-size: 100%;    
+}
+.hexblock{
+    background-color: #3d4b96; 
+    width: 800px;            
+    height: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 150%;
+    font-variant: small-caps;
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-shadow: 2px 0px 2px black;
+    direction: rtl;
+    
+}
+.rgbblock{
+    background-color: rgb(240, 100, 4);
+    width: 75em;            
+    height: 8em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    white-space:pre-wrap;
+    text-indent: 15px;
+
+
+}
+.rgbablock{
+    width: 80vw;            
+    height: 40vh;
+    background-color: rgba(0, 255, 0, 1); 
+    font-family: 'Prata', serif;
+    text-align: right;
+    line-height: 2.5;
+    text-transform: uppercase;
+}
+.rgbblock sub{
+    vertical-align: text-bottom; 
+    text-decoration: overline;
+}
