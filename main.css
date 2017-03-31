@@ -1,0 +1,33 @@
+table{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+}
+tr{ 
+    font-size: 10pt;
+}
+.hov:hover{
+    color: white;
+}
+th{
+    text-transform: uppercase;
+    font-size: 8pt;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+td{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+tr:nth-child(even){
+    background: #e6e5f4;
+}
+tr:nth-child(odd){
+    background: #d2d1ff;
+}
