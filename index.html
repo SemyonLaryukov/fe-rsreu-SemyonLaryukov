@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <meta charset=utf-8>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+    <body class="container">
+        <header class="header">
+            <ul class="header__menu">
+                <li class="header__menu__item">Help Center</li>
+                <li class="header__menu__item">Our Support</li>
+                <li class="header__menu__item header__menu__item--active">
+                    <img src="icons/face.png" alt="face">John Doe <i class="fa fa-check-circle" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </header>
+
+    <main class="main">
+        <aside class="aside">
+        <div class="button">
+            <button type="button_add">ADD A BOOK</button>
+        </div>
+            <nav class="iconmenu">
+                <ul class="iconmenu_ul">
+                    <li class="nowreading">Now Reading</li>
+                    <li class="browse">Browse</li>
+                    <li class="buybooks">Buy Books</li>
+                    <li class="favouritebooks">Favourite Books</li>
+                    <li class="wishlist">Wishlist</li>
+                    <li class="history">History</li>
+                </ul>
+            </nav>
+            <nav class="dotmenu">
+                <ul class="dotmenu_ul">
+                    <li class="mustread">Must Read Titles</li>
+                    <li class="bestof">Best Of List</li>
+                    <li class="classicnovels">Classic Novels</li>
+                    <li class="nonfiction">Non Fiction</li>
+                </ul>
+            </nav>
+            <div class="wrapper__history">
+            <div class="historytext">
+                You added <span>Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read Titles.</span>
+            </div>
+            <div class="time">24 minutes ago</div>
+            <div class="historytext">
+                You added <span>The Trial</span> by <span>Franz Katika</span> to your <span>Must Read Titles.</span>
+            </div>
+            <div class="time">48 minutes ago</div>
+            </div>  
+        </aside>
+        <div class="section__wrapper">
+            <section class="section__subheader"> 
+                <div class="section__subheader__wrapper">
+                    <h1 class="main__head">Browse Available Books</h1> 
+                    <menu class="menu">
+                        <ul class="main__menu">
+                            <li class="main__menu__item ">
+                                <a href="#" class=" main__menu__item--active menu__link">All Books</a>
+                            </li>
+                            <li class="main__menu__item">
+                                <a href="#" class="menu__link">Most Recent</a>
+                            </li>
+                            <li class="main__menu__item">
+                                <a href="#" class="menu__link">Most Popular</a>
+                            </li>
+                            <li class="main__menu__item">
+                                <a href="#" class="menu__link">Free Books</a>
+                            </li>
+                        </ul>
+                        <input type="search" placeholder="Enter Keywords" class="main__search">
+                    </menu>
+                </div>  
+            </section>  
+              <section class="section__content"> 
+                  <div class="book__block">
+                      <img src="icons/1.png" alt="1">
+                      <span class="book__name">Jewels of Nizam</span>
+                      <span class="book__author">by Geeta Devi</span>            
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/2.png" alt="2">
+                      <span class="book__name">Cakes &amp; Bakes</span>
+                      <span class="book__author">by sanjeev Kapoor</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/3.png" alt="3">
+                      <span class="book__name">Jamie's Kitchen</span>
+                      <span class="book__author">by Jamie Oliver</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/4.png" alt="4">
+                      <span class="book__name">Inexpencive Family Meals</span>
+                      <span class="book__author">by Simon Holst</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/5.png" alt="5">
+                      <span class="book__name">Paleo Slow Cooking</span>
+                      <span class="book__author">by Chrissy Gower</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/6.png" alt="6">
+                      <span class="book__name">Cook like an Italian</span>
+                      <span class="book__author">by Tobie Puttock</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/7.png" alt="7">
+                      <span class="book__name">Suneeta Vaswani</span>
+                      <span class="book__author">by Geeta Devi</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/8.png" alt="8">
+                      <span class="book__name">Jamie Does</span>
+                      <span class="book__author">by Jamie Oliver</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/9.png" alt="9">
+                      <span class="book__name">Jamie's Italy</span>
+                      <span class="book__author">by Jamie Oliver</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div> 
+                  <div class="book__block">
+                      <img src="icons/10.png" alt="10">
+                      <span class="book__name">Vegetables Cookbook</span>
+                      <span class="book__author">by Matthew Biggs</span>
+                      <div class="rating-wrapper">
+                          <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+                          <label for="rating-input-1-5" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+                          <label for="rating-input-1-4" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+                          <label for="rating-input-1-3" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+                          <label for="rating-input-1-2" class="rating-star"></label>
+                          <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+                          <label for="rating-input-1-1" class="rating-star"></label>
+                     </div>
+                  </div>  
+              </section>
+      </div>
+    </main>
+    <footer class="footer">
+            <ul class="footer__menu">
+                <li class="footer__menu__item">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i> 
+                </li>
+                <li class="footer__menu__item">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                </li>
+            </ul>
+    </footer>
+  </body>
+</html>
