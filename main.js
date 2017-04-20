@@ -3,13 +3,18 @@ var userFirstName = 'Semyon';
 var userLastName = 'Laryukov';
 console.log(userFirstName + ' ' + userLastName);
 
-var triangleArea = function (side1, side2, side3) {
-if (Number.isNaN(side1)) && Number.isNaN(side2)) && Number.isNaN(side3)) {
-	var p = (side1 + side2 + side3) / 2;
+function isNumber(num) {
+	return isFinite(num) && num === parseInt(num, 10);
+}
 
-	return Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
-} else {
-	console.log('Неверное входное значение');
+var triangleArea = function (side1, side2, side3) {
+	if (isNumber(side1) && isNumber(side2) && isNumber(side3)) {
+		var p = (side1 + side2 + side3) / 2;
+
+		return Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
+	} else {
+		throw new Error('Неверный тип');
+	}
 }
 
 console.log('Площадь треугольника ' + triangleArea(3, 4, 5));
@@ -31,7 +36,7 @@ function reverseArrrayWhile(a) {
 
 		return a;
 	}
-	console.log('Неверный тип');
+	throw new Error('Неверный тип');
 }
 
 console.log(reverseArrrayWhile(cities));
@@ -49,7 +54,7 @@ function reverseArrrayFor(a) {
 
 		return a;
 	}
-	console.log('Неверный тип');
+	throw new Error('Неверный тип');
 }
 
 console.log(reverseArrrayFor(cities));
@@ -66,7 +71,7 @@ console.log(++increment);
 console.log(increment);
 
 function checkNumber(num) {
-	if (isFinite(num) && num === parseInt(num, 10)) {
+	if (isNumber(num)) {
 		if (num = 0) {
 			return 'Ноль';
 		} else {
@@ -77,7 +82,7 @@ function checkNumber(num) {
 			}
 		}
 	} else {
-		console.log('Неверный тип')
+		throw new Error('Неверный тип');
 	}
 }
 
@@ -88,14 +93,14 @@ var userName = prompt("Ваше имя?");
 console.log('Имя пользователя ' + userName);
 
 function calculateFactorial(num) {
-	if (isFinite(num) && num === parseInt(num, 10)) {
+	if (isNumber(num)) {
 		if (num === 0) {
 			return 1;
 		} else {
 			return num * calculateFactorial(num - 1);
 		}
 	} else {
-		console.log('Неверный тип');
+		throw new Error('Неверный тип')
 	}
 }
 
