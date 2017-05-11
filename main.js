@@ -2,13 +2,12 @@ var Utils = (function () {
 	'use strict';
 
 	function isNumber(input) {
-
 		return !isNaN(parseFloat(input)) && isFinite(input);
 	}
 
 	return {
-		isNumber: isNumber;
-	}
+		isNumber: isNumber
+	};
 }());
 
 var Calculator = (function (Utils) {
@@ -17,14 +16,11 @@ var Calculator = (function (Utils) {
 	var result = 0;
 
 	function getResult() {
-
 		return result;
 	}
 
 	function add() {
-
 		for (var i = 0; i < arguments.length; i++) {
-
 			if (!Utils.isNumber(arguments[i])) {
 				throw new Error('Неверное значение');
 			}
@@ -36,9 +32,7 @@ var Calculator = (function (Utils) {
 	}
 
 	function subtract() {
-
 		for (var i = 0; i < arguments.length; i++) {
-
 			if (!Utils.isNumber(arguments[i])) {
 				throw new Error('Неверное значение');
 			}
@@ -50,9 +44,7 @@ var Calculator = (function (Utils) {
 	}
 
 	function divide() {
-
 		for (var i = 0; i < arguments.length; i++) {
-
 			if (!Utils.isNumber(arguments[i])) {
 				throw new Error('Неверное значение');
 			}
@@ -64,9 +56,7 @@ var Calculator = (function (Utils) {
 	}
 
 	function multiply() {
-
 		for (var i = 0; i < arguments.length; i++) {
-
 			if (!Utils.isNumber(arguments[i])) {
 				throw new Error('Неверное значение');
 			}
@@ -91,7 +81,6 @@ var Calculator = (function (Utils) {
 		multiply: multiply,
 		reset: reset
 	};
-
 })(Utils);
 
 Calculator.add(4);
