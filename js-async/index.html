@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS ASYNC</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="top-nav header__top-nav">
+					<ul>
+						<li class="top-nav__item"><a class="top-nav__link" href="#">Help Center</a></li>
+						<li class="top-nav__item top-nav__item--decorated "><a class="top-nav__link" href="#">Our Support</a></li>
+					</ul>
+				</nav>
+
+				<nav class="userbar header__userbar">
+					<div class="userbar__avatar"></div>
+					<span class="userbar__name">
+            John Doe
+          </span>
+					<span class="userbar__dropdown-icon">
+            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+          </span>
+				</nav>
+
+			</div>
+		</header>
+
+		<div class="main-section__wrapper">
+			<aside class="sidebar" id="sidebar">
+				<div class="sidebar__container">
+					<button type="submit" id="newBookButton" form="addBookForm" class="btnAdd sidebar__btnAdd">
+            <span class="btnAdd__plus-icon">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </span>
+            <span class="btnAdd__text">
+              add a book
+            </span>
+          </button>
+
+					<div class="sidebar__addBookInputs">
+						<form name="addBookForm">
+							<input class="sidebar__addBookInput addBookTitle" id="newBookTitle" type="text" placeholder="Enter Title" required>
+							<input class="sidebar__addBookInput addBookAuthor" id="newBookAuthor" type="text" placeholder="Enter Author" required>
+							<input class="sidebar__addBookInput addBookCover" id="newBookCover" type="file" accept="image/jpeg, image/png, image/gif">
+						</form>
+					</div>
+					<div class="sidebar__divider"></div>
+
+					<nav class=" main-nav sidebar__main-nav">
+						<div class="main-nav__item">
+							<span class="main-nav__icon">
+                <i class="fa fa-book" aria-hidden="true"></i>
+              </span>
+							<span class="main-nav__text">
+                Now Reading
+              </span>
+						</div>
+						<div class="main-nav__item">
+							<span class="main-nav__icon">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </span>
+							<span class="main-nav__text">
+                Browse
+              </span>
+						</div>
+						<div class="main-nav__item">
+							<span class="main-nav__icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </span>
+							<span class="main-nav__text">
+                Buy Books
+              </span>
+						</div>
+						<div class="main-nav__item">
+							<span class="main-nav__icon">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </span>
+							<span class="main-nav__text">
+                Favourite Books
+              </span>
+						</div>
+						<div class="main-nav__item">
+							<span class="main-nav__icon">
+                <i class="fa fa-th-list" aria-hidden="true"></i>
+              </span>
+							<span class="main-nav__text">
+                Wishlist
+              </span>
+						</div>
+						<div class="main-nav__item">
+							<span class="main-nav__icon">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              </span>
+							<span class="main-nav__text">
+                History
+              </span>
+						</div>
+					</nav>
+
+					<div class="sidebar__divider sidebar__divider--second"></div>
+					<nav class="preferences sidebar__preferences">
+						<div class="preferences__item">
+							<span class="preferences__text preferences__text--red-bullet">
+                must read titles
+              </span>
+						</div>
+						<div class="preferences__item">
+							<span class="preferences__text preferences__text--yellow-bullet">
+                best of list
+              </span>
+						</div>
+						<div class="preferences__item">
+							<span class="preferences__text preferences__text--blue-bullet">
+                classic novels
+              </span>
+						</div>
+						<div class="preferences__item">
+							<span class="preferences__text preferences__text--violet-bullet">
+                non fiction
+              </span>
+						</div>
+					</nav>
+
+					<div class="sidebar__divider sidebar__divider--third"></div>
+					
+					<div class="history-list">
+					<ul>
+					</ul>
+				</div>	
+				</div>
+			</aside>
+
+			<div class="middle-content__container">
+				<div class="search-panel">
+					<div class="search-panel__container">
+						<div class="search-panel__section">
+							<h2 class="search-panel__heading">browse available books</h2>
+						</div>
+						<div class="search-panel__section search-panel__section--bottom">
+							<div class="search-panel__menu">
+								<input id="allBooks" class="search-panel__menu-input" name="search-panel__menu-input" type="radio" />
+								<label id="allBooksLabel" class="search-panel__menu-item" for="allBooks">all books</label>
+								<input id="mostRecent" class="search-panel__menu-input" name="search-panel__menu-input" type="radio" />
+								<label class="search-panel__menu-item" for="mostRecent">most recent</label>
+								<input id="mostPopular" class="search-panel__menu-input" name="search-panel__menu-input" type="radio" />
+								<label id="mostPopularLabel" class="search-panel__menu-item" for="mostPopular">most popular</label>
+								<input id="freeBooks" class="search-panel__menu-input" name="search-panel__menu-input" type="radio" />
+								<label class="search-panel__menu-item" for="freeBooks">free books</label>
+							</div>
+							<div class="search-panel__search">
+								<input class="search-panel__search-input" id="searchKeywords" type="search" placeholder="Enter Keywords" maxlength="30" />
+								<span class="search-panel__search-icon">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<main class="content">
+					<ul class="filter-results-list">
+				</ul>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<nav class="bottom-nav footer__bottom-nav">
+				<div class="bottom-nav__item">
+					<i class="fa fa-question-circle" aria-hidden="true"></i>
+				</div>
+				<div class="bottom-nav__item bottom-nav__item--corner">
+					<i class="fa fa-cog" aria-hidden="true"></i>
+				</div>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="js/utils/utils.js"></script>
+	<script src="js/model/book.model.js"></script>
+	<script src="js/model/notification.model.js"></script>
+	<script src="js/storage/book.storage.js"></script>
+	<script src="js/storage/notification.storage.js"></script>
+	<script src="js/controller/controller.js"></script>
+	<script src="js/view/notification.view.js"></script>
+	<script src="js/view/book.view.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
